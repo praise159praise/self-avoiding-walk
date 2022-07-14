@@ -10,7 +10,7 @@ let cols, rows
 let allOptions = [ /*right*/{ dx: 1, dy: 0 }, /*left*/{ dx: -1, dy: 0 }, /*down*/{ dx: 0, dy: 1 }, /*up*/{ dx: 0, dy: -1 }]
 function setup() {
     createCanvas(500, 500)
-    spacing = 50
+    spacing = 10
     cols = floor(width / spacing)
     rows = floor(height / spacing)
     x = cols / 2
@@ -43,7 +43,7 @@ function draw() {
 
         stroke(255)
         beginShape()
-        strokeWeight(2)
+        strokeWeight(1)
         vertex(x * spacing, y * spacing)
         x += step.dx
         y += step.dy
