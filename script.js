@@ -13,7 +13,7 @@ let spot
 
 function setup() {
     createCanvas(400, 400)
-    spacing = 50
+    spacing = 12.5
     cols = floor(width / spacing)
     rows = floor(height / spacing)
 
